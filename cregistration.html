@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        .class-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 300px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Dashboard</h1>
+
+    <p>Welcome, <?php echo $_SESSION['valid_user']; ?>!</p>
+
+    <h2>Available Classes</h2>
+
+    <?php if (isset($registration_message)) : ?>
+        <p><?php echo $registration_message; ?></p>
+    <?php endif; ?>
+
+    <?php if (!empty($cname)) : ?>
+        <?php foreach ($classes as $class) : ?>
+            <div class="class-card">
+                <h3><?php echo $cname['cname']; ?></h3>
+                <p>Class ID: <?php echo $class['cid']; ?></p>
+                <p>Available Seats: <?php echo $cname['seats']; ?></p>
+                
+                <!-- Add more class details as needed -->
+
+                <!-- Form to register for the class -->
+                <form method="POST" action="">
+                    <input type="hidden" name="class_id" value="<?php echo $cname['cid']; ?>">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        <?php endforeach; ?>
+    <?php else : ?>
+        <p>No classes available for registration.</p>
+    <?php endif; ?>
+
+    <p><a href="logout.php">Log out</a></p>
+</body>
+</html>
