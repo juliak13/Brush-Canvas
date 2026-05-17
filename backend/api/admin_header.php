@@ -1,40 +1,7 @@
 <html>
 <head>
   <title>Brush & Canvas Art Classes</title>
-  <style type="text/css">
-    h1 {
-        color:white; font-size:24pt; text-align:center;
-        font-family:arial,sans-serif
-    }
-    .menu {
-        color:white; font-size:12pt; text-align:center;
-           font-family:arial,sans-serif; font-weight:bold
-        }
-    td {
-        background:rgb(215, 166, 6)
-    }
-    p {
-        color:black; font-size:12pt; text-align:justify;
-       font-family:arial,sans-serif
-    }
-    p.foot {
-        color:white; font-size:9pt; text-align:center;
-            font-family:arial,sans-serif; font-weight:bold
-        }
-    a:link,a:visited,a:active {
-        color:white;
-        text-decoration: none;
-    }
-    a:hover {
-    color: rgb(64, 22, 22); /* Adjust the color for hover */
-  }
-
-  /* Style for the selected or active page */
-  a.active {
-    color: lightblue; /* Adjust the color for the selected page */
-    font-weight: bold; /* Optional: Make the text bold for the selected page */
-  }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 
