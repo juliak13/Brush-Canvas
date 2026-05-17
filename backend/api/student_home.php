@@ -1,3 +1,70 @@
-<?php
-    require('student_header.php');
-?>
+<html>
+<head>
+  <title>Brush & Canvas Art Classes</title>
+  <style type="text/css">
+    h1 {
+        color:white; font-size:24pt; text-align:center;
+        font-family:arial,sans-serif
+    }
+    .menu {
+        color:white; font-size:12pt; text-align:center;
+           font-family:arial,sans-serif; font-weight:bold
+        }
+    td {
+        background:rgb(215, 166, 6)
+    }
+    p {
+        color:black; font-size:12pt; text-align:justify;
+       font-family:arial,sans-serif
+    }
+    p.foot {
+        color:white; font-size:9pt; text-align:center;
+            font-family:arial,sans-serif; font-weight:bold
+        }
+    a:link,a:visited,a:active {
+        color:white;
+        text-decoration: none;
+    }
+    a:hover {
+    color: rgb(64, 22, 22); /* Adjust the color for hover */
+  }
+
+  /* Style for the selected or active page */
+  a.active {
+    color: lightblue; /* Adjust the color for the selected page */
+    font-weight: bold; /* Optional: Make the text bold for the selected page */
+  }
+  </style>
+</head>
+<body>
+
+  <!-- page header -->
+  <table width="100%" cellpadding="12" cellspacing="0" border="0">
+  <tr bgcolor="black">
+    <td align="left"><img src="logo.png" height=70 width=70></td>
+    <td>
+        <h1>Brush & Canvas</h1>
+  </table>
+
+  <!-- menu -->
+  <table width="100%" bgcolor="white" cellpadding="1" cellspacing="4">
+  <tr >
+    <td width="25%" style="text-align: center;">
+        <a class="active">
+        <height="20" width="20"> <span class="menu">Home</span>
+    </a>
+    </td>
+    </td>
+    <td width="25%" style="text-align: center;">
+        <a href="enrolled_classes.html" class="active">
+        <height="20" width="20"> <span class="menu">Classes</span>
+        </a>
+    </td>
+    <td width="25%" style="text-align: center;">
+        <a href="course_registration.html" class="active">
+        <height="20" width="20"> <span class="menu">Registration</span>
+        </a>
+    </td>
+  </tr>
+  </table>
+

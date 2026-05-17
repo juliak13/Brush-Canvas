@@ -12,7 +12,7 @@
     <body>
         <div class="form">
             <p>Dashboard</p>
-            <p><a href="index.php">Home</a></p>
+            <p><a href="index.html">Home</a></p>
             <a href="logout.php">Logout</a>
         </div>
     </body>
