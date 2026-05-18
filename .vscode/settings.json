@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "BrushCanvasDB",
+            "database": "backend/database/brushcanvas.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

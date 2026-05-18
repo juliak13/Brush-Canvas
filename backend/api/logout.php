@@ -1,7 +1,8 @@
 <?php
-    sessiont_start();
-    if (session_destory()) {
-        header("Location: login.php");
-        exit();
-    }
+session_start();
+session_unset();
+session_destroy(); 
+
+header("Location: login.php");
+exit();
 ?>

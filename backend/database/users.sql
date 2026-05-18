@@ -1,23 +1,9 @@
-create table ADMIN (
-    'fname' varchar(30) NOT NULL,
-    'lname' varchar(30) NOT NULL,
-    'email' varchar(80) NOT NULL,
-    'password' varchar(30) NOT NULL
-    'aid' int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY
-);
-
-create table INSTRUCTOR (
-    'fname' varchar(30) NOT NULL, 
-    'lname' varchar(30) NOT NULL,
-    'email' varchar(80) NOT NULL,
-    'password' varchar(30) NOT NULL,
-    'iid' int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY
-);
-
-create table STUDENT (
-    'fname' varchar(30) NOT NULL,
-    'lname' varchar(30) NOT NULL,
-    'email' varchar(80) NOT NULL, 
-    'password' varchar(30) NOT NULL,
-    'cid' int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    fname VARCHAR(30) NOT NULL,
+    lname VARCHAR(30) NOT NULL,
+    email VARCHAR(80) NOT NULL UNIQUE,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL, 
+    user_type VARCHAR(20) NOT NULL
 );
